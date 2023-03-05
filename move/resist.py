@@ -22,7 +22,7 @@ while run:
         if event.type == pygame.QUIT:
             run = False
 
-    gravity += resist
+    gravity *= resist
     yspeed += gravity
     ypos += yspeed
 
